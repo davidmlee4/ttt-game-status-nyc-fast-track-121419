@@ -31,14 +31,13 @@ def won?(board)
     end
   end
 
+
   return false
 
-    if combo_arr == "X" || combo_arr == "O"
-      return combo_arr
-    else
-      return false
-    end
+
 end
+
+
 
 
 def full?(board)
