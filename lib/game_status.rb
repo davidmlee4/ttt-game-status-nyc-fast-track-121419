@@ -60,11 +60,13 @@ def draw?(board_array)
     return false
   end
 
-  
+
 end
 
 
 def over?(board_array)
+
+
   if draw?(board_array)
     return true
   elsif won?(board_array) && full?(board_array)
@@ -74,4 +76,6 @@ def over?(board_array)
   else
     return false
   end
+
+  
 end
