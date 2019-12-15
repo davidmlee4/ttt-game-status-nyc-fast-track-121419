@@ -17,7 +17,9 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo_arr|
-    combo_arr
+    first_index = combo_arr[0]
+    second_index = combo_arr[1]
+    third_index = combo_arr[2]
     if combo_arr == "X" || combo_arr == "O"
       return combo_arr
     else
