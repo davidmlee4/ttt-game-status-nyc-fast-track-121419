@@ -67,11 +67,7 @@ end
 def over?(board_array)
 
 
-  if draw?(board_array)
-    return true
-  elsif won?(board_array) && full?(board_array)
-    return true
-  elsif won?(board_array) && !full?(board_array)
+  if draw?(board_array) || won?(board_array)
     return true
   else
     return false
@@ -79,3 +75,7 @@ def over?(board_array)
 
 
 end
+
+def winner?(board_array)
+
+  if won?(board_array) && combo_arr == "X"
