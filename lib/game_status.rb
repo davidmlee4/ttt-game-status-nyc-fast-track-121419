@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]]
 
 
-def won?(board)
+def won?(board_array)
   WIN_COMBINATIONS.each do |combo_arr|
     #combo_arr = [0,1,2]
     first_index = combo_arr[0] #0
@@ -38,14 +38,17 @@ def won?(board)
 end
 
 
+def full?(board_array)
 
 
-def full?(board)
-  if board.include? ('') || board.include? (' ')
-    return false
-  else
-    return true
+  board_array.each do |symbol|
+    if symbol == " "
+      return false
+    end
   end
+
+    return true
+  
 end
 
 def draw?(board)
