@@ -48,7 +48,7 @@ def full?(board_array)
   end
 
     return true
-  
+
 end
 
 def draw?(board_array)
