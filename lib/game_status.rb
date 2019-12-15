@@ -77,5 +77,8 @@ def over?(board_array)
 end
 
 def winner(board)
+  if won?(board)
+    combo_arr == "X" || combo_arr == "O"
 
-  if won?(board_array) && combo_arr == "X"
+  end
+end
