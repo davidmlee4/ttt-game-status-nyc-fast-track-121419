@@ -78,7 +78,6 @@ end
 
 def winner(board)
   if won?(board)
-    combo_arr == "X" || combo_arr == "O"
-
+    return true
   end
 end
