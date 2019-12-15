@@ -20,6 +20,11 @@ def won?(board)
     first_index = combo_arr[0]
     second_index = combo_arr[1]
     third_index = combo_arr[2]
+
+    the symbol_at_1 = board_array[first_index]
+    the symbol_at_2 = board_array[second_index]
+    the symbol_at_3 = board_array[third_index]
+
     if combo_arr == "X" || combo_arr == "O"
       return combo_arr
     else
