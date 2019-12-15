@@ -57,7 +57,7 @@ def draw?(board_array)
   end
 end
 
-def over?(board)
+def over?(board_array)
   if draw?(board)
     return true
   elsif full?(board)
