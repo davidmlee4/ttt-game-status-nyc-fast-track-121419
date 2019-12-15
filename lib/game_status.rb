@@ -17,15 +17,15 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo_arr|
-    first_index = combo_arr[0]
-    second_index = combo_arr[1]
-    third_index = combo_arr[2]
+    first_index = combo_arr[0] #0
+    second_index = combo_arr[1] #1
+    third_index = combo_arr[2] #2
 
     the_symbol_at_1 = board_array[first_index]
-    the_symbol_at_2symbol_at_2 = board_array[second_index]
-    the symbol_at_3 = board_array[third_index]
+    the_symbol_at_2 = board_array[second_index]
+    the_symbol_at_3 = board_array[third_index]
 
-    if the_symbol
+    if the_symbol_at_1 == the_symbol_at_2 && the_symbol_at_2 == the_symbol_at_3
     if combo_arr == "X" || combo_arr == "O"
       return combo_arr
     else
