@@ -52,11 +52,15 @@ def full?(board_array)
 end
 
 def draw?(board_array)
+
+
   if !won? && full?(board_array)
     return true
   else
     return false
   end
+
+  
 end
 
 
