@@ -16,14 +16,13 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combo|
-    if win_combo == "X" || win_combo == "O"
-      return win_combo
-  elsif check_win_combination?(board, 'O', win_combo)
-    return win_combo
-  else
-    return false
-  end
+  WIN_COMBINATIONS.each do |combo_arr|
+    combo_arr
+    if combo_arr == "X" || combo_arr == "O"
+      return combo_arr
+    else
+      return false
+    end
 end
 
 def check_win_combination?(board, player, win_combo)
