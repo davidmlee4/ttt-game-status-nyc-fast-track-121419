@@ -81,6 +81,6 @@ def winner(board)
     arr_winning_combination = won?(board)
     index = arr_winning_combination[0]
   else
-    return false
+    return nil
   end
 end
