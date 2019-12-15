@@ -77,5 +77,5 @@ def over?(board_array)
     return false
   end
 
-  
+
 end
