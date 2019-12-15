@@ -59,10 +59,12 @@ def draw?(board_array)
   end
 end
 
+
 def over?(board_array)
-  if draw?(board)
+  if draw?(board_array)
     return true
-  elsif full?(board)
-    return full?(board)
+  elsif won?(board_array) && full?(board_array)
+    return true
+  elsif won?(board_array) && !full?(board_array)
   end
 end
