@@ -29,6 +29,9 @@ def won?(board)
     if the_symbol_at_1 == the_symbol_at_2 && the_symbol_at_2 == the_symbol_at_3 && the_symbol_at_1 != " "
       return combo_arr
     end
+  end
+
+  return false
 
     if combo_arr == "X" || combo_arr == "O"
       return combo_arr
