@@ -79,7 +79,7 @@ end
 def winner(board)
   if won?(board)
     arr_winning_combination = won?(board)
-    return true
+    index = arr_winning_combination[0]
   else
     return false
   end
